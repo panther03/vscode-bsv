@@ -70,8 +70,6 @@ function bsvLint(doc: vscode.TextDocument) {
     logger.info('[bsvlint] Execute');
     logger.info('[bsvlint]   command: ' + command);
 
-    vscode.window.showInformationMessage("cwd = " + wdir);
-
     child_process.exec(command, 
         {
             cwd: wdir,
